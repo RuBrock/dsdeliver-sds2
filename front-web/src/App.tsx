@@ -1,9 +1,10 @@
 import './App.css';
+import Navbar from './core/components/Navbar';
 
 function App() {
   return (
     <div>
-      <h1>Hello, DS Deliver</h1>
+      <Navbar />
     </div>
   );
 }
