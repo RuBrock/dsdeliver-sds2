@@ -80,11 +80,12 @@
   
     .home-image {
       text-align: center;
+      
+      svg {
+        width: 70%;
+      }
     }
   
-    .home-image svg {
-      width: 80%;
-    }
   }
   
   @media (max-height: 700px) {

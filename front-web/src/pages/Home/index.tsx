@@ -1,11 +1,15 @@
 import './styles.scss';
-import {ReactComponent as MainImage} from '../../core/assets/images/main.svg';
+import { ReactComponent as MainImage } from '../../core/assets/images/main.svg';
+import Navbar from '../../core/components/Navbar';
+import Footer from '../../core/components/Footer';
 
-const Home = () => {
-    return (
+const Home = () => (
+    <>
+        <Navbar />
+        
         <div className="home-container">
             <div className="home-content">
-                
+
                 <div className="home-actions">
                     <h1 className="home-title">
                         Faça seu pedido <br /> que entregamos <br /> pra você!!!
@@ -19,14 +23,16 @@ const Home = () => {
                         FAZER PEDIDO
                     </a>
                 </div>
-                
+
                 <div className="home-image">
                     <MainImage />
                 </div>
 
             </div>
         </div>
-    );
-}
+
+        <Footer />
+    </>
+);
 
 export default Home;
